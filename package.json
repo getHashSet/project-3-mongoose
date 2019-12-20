@@ -35,5 +35,8 @@
 		"heroku-postbuild": "npm run build",
 		"seed": "node utils/scripts/seeds.js"
 	},
+	  "engines": {
+		"node": "12.13.0"
+	},
 	"proxy": "http://localhost:8080"
 }

@@ -13,6 +13,21 @@ function NavBarComponent({ loggedIn, _logout }) {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/topmovies" className="nav-link" >
+                            Top Movies
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/userhome" className="nav-link" >
+                            Menu
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/vote" className="nav-link" >
+                            Rate Movies
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="#" className="nav-link" onClick={_logout}>
                             Logout
                         </Link>

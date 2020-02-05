@@ -5,6 +5,10 @@ import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
 import { NavBar } from './components'
+import TopTwenty from './pages/TopTwenty'
+import VotePage from './pages/VotePage'
+import UserLanding from './pages/UserLanding'
+import UserMovieList from './pages/UserMovieList'
 
 class App extends Component {
 	constructor(props) {
@@ -88,6 +92,22 @@ class App extends Component {
 				<Route
 					exact path="/signup"
 					component={SignupForm}
+				/>
+				<Route
+					exact path="/topmovies"
+					component={TopTwenty}
+				/>
+				<Route
+					exact path="/userhome"
+					component={UserLanding}
+				/>
+				<Route
+					exact path="/mymovielist"
+					component={UserMovieList}
+				/>
+				<Route
+					exact path="/vote"
+					component={VotePage}
 				/>
 			</div>
 		)
